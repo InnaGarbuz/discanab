@@ -1,0 +1,304 @@
+
+.testemonial .your-class p{
+    text-align: justify}
+.footer .about p{
+	font-size: 13px;
+}
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+header .container{
+	margin: 0;
+}
+.navbar-default .nav li a{
+	font-size: 9px;
+}
+.navbar-default {
+	height: 90px;
+}
+.navbar-default  .navbar-brand img{
+	width: 130px;
+	margin: 0 20px
+}
+.services .content .sv_block p{
+	text-align: center;
+	padding: 0;
+}
+.footer .sosial h4{
+	display: none;
+
+}
+.footer .sosial{
+	text-align: center;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+.navbar-default  .navbar-collapse{
+	border-color: none;
+	background: #3d3d3d;
+margin: 10px;}
+.navbar-default  .navbar-brand img{
+	width: 90px;
+	margin: 0 20px
+}
+
+.subscribe .bg_contain{
+	width: 100%
+}
+
+.navbar-default{
+	height: 70px;
+}
+
+.subscribe .header_text h2, .subscribe .header_text h2, .testemonial .h_header h2{
+	font-size: 25px;
+}
+.contact form textarea{
+	resize: vertical;
+}
+
+.attorney .content_block .block_one, .attorney .content_block .block_three, .attorney .content_block .block_two{
+	display: none;
+}
+ .attorney  .hidden_two,  .attorney  .hidden_three{
+	display: block;
+}
+
+.attorney .arrow_box_three, .attorney .arrow_box_two, .attorney .arrow_box{
+	display: none
+}
+.attorney  .hidden_one, .attorney  .hidden_two,  .attorney  .hidden_three{
+	margin-bottom: 20px;
+}
+.attorney ul{
+	padding: 0;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.your-class{
+	width: 200px;
+	margin: 0 auto
+	color: #fff;
+	text-align: center;}
+.footer .f_contact ul{
+	padding: 0
+}
+.subscribe .bg_contain h1{
+	font-size: 30px;
+}
+ .subscribe .header_text h2, .testemonial .h_header h2{
+	font-size: 20px;
+}
+.subscribe .header_text{
+	width: 100%;
+	left: 0;
+}
+.navbar-default  .navbar-brand img{
+	margin: 0;
+}
+.footer .sosial {
+	text-align: center;
+}
+
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+
+.attorney .hidden_one .bl_img, .attorney .hidden_two .bl_img, .attorney .hidden_three .bl_img{
+	text-align: left;
+}
+.attorney .hidden_one .bl_img img, .attorney .hidden_two .bl_img img, .attorney .hidden_three .bl_img img{
+	width: 200px;
+}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+.your-class{
+	width: 100%px;
+	margin: 0 auto
+	color: #fff;
+	text-align: center;}
+.your-class	img{
+		border-radius: 50px;}
+
+.subscribe {
+    width: 100%;
+    background: url(../img/4.jpg) no-repeat center right;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 50px 0 50px;
+}
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+ .attorney 	.hidden_two,  .attorney  .hidden_three, .attorney .arrow_box_three, .attorney .arrow_box_two{
+	display: none
+}
+.services .content .sv_block img{
+	height: 220px
+}
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+
+
+
+
+
+}
+
+
+
+.tabs {
+	max-width: 100%
+	padding: 0px;
+	margin: 0 auto;
+}
+/* Стили секций с содержанием */
+.tabs>section {
+    display: none;
+    padding: 15px;
+    background: #444;
+    border: 1px solid #444;
+
+}
+.tabs>section{
+	margin: 0 0 5px;
+	line-height: 1.5;
+	color: #383838;
+	/* прикрутим анимацию */
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+ 
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* Прячем чекбоксы */
+.tabs>input {
+	display: none;
+	position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs>label {
+	display: inline-block;
+	margin: 0 0 -1px;
+	padding: 0 25px;
+	font-weight: 600;
+	text-align: center;
+}
+/* Шрифт-иконки от Font Awesome в формате Unicode */
+.tabs>label:before {
+	font-family: fontawesome;
+	font-weight: normal;
+	margin-right: 10px;
+}
+
+/* Изменения стиля переключателей вкладок при наведении */
+ 
+.tabs>label:hover {
+	color: #888;
+	cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs>input:checked+label+ {
+	color: #555;
+	border-top: 1px solid #009933;
+	border-bottom: 1px solid #fff;
+	background: #444;
+}
+
+.tabs>input:checked+label {
+	color: #555;
+	border-top: 1px solid #009933;
+	border-bottom: 1px solid #fff;
+	background: #fff;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+	display: block;
+}
+/* Убираем текст с переключателей 
+* и оставляем иконки на малых экранах
+*/
+
+
+@media screen and (max-width: 998px) {
+#tab1, #tab2, #tab3{
+	display: none;
+}
+
+#content-tab1, #content-tab2, #content-tab3{}
+
+
+
+}
+ 
+@media screen and (max-width: 680px) {
+	.tabs>label {
+		font-size: 0;
+	}
+	.tabs>label:before {
+		margin: 0;
+		font-size: 18px;
+	}
+}
+/* Изменяем внутренние отступы 
+*  переключателей для малых экранов
+*/
+@media screen and (max-width: 400px) {
+	.tabs>label {
+		padding: 15px;
+	}
+}
